@@ -1,1 +1,16 @@
 <head>
+<style>
+  .meat {
+    background-color: pink;
+  }
+  .dairy {
+    background-color: yellow;
+  }
+  .vegetables {
+    background-color: green;
+  }
+.fruit {
+  background-color: lightblue;
+}
+  </style>
+  </head>
