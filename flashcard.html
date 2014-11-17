@@ -5,43 +5,21 @@ nav {
 position: fixed;
 margin: 20px;
 }
-#q1.question {
+.question {
 position: absolute;
 border: 2px solidblack;
 border-radius: 10px;
 background-color: yellow; 
 width: 100px;
 height:100px;
-z-index:1;
 }
-#a1.answer {
+.answer {
 position: absolute;
 border: 2px solidblack;
 border-radius: 10px;
 background-color: red; 
 width: 100px;
 height:100px;
-}
-#q2.question {
-position: absolute;
-border: 2px solidblack;
-border-radius: 10px;
-background-color: yellow; 
-width: 100px;
-height:100px;
-z-index:1;
-left: 130px;
-top: 0px;
-}
-#a2.answer {
-position: absolute;
-border: 2px solidblack;
-border-radius: 10px;
-background-color: red; 
-width: 100px;
-height:100px;
-left: 130px;
-top: 0px;
 }
  nav:hover {display:none;}
 
@@ -49,20 +27,19 @@ top: 0px;
 </head>
 <body>
 <nav>
-<section id="q1" class="question">
+<section class="answer">
+  <p>Guy</p>
+  <section class="question">
   <p>What does Chavo mean in spanish?</p>
   </section>
-<section id="a1" class="answer">
-  <p>Guy</p>
-  <section id="q2" class="question">
-  <p>What is my favorite color?</p>
-  </section>
-<section id="a2" class="answer">
+  </nav>
+  <nav>
+ <section class="answer">
   <p>blue</p>
   </section>
-
-
- 
-  </nav>
+   <section class="question">
+  <p>What is my favorite color?</p>
+  </section>
+ </nav>
 </body>
 </html>
