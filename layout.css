@@ -8,8 +8,9 @@ header {
          }
          nav {
              margin-top: 20px;
-             margin-bottom: -26px;
+             margin-bottom: -16px;
              background-color: green;
+             top:10px;
          }
          nav li {
             display: inline;
