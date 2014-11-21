@@ -8,7 +8,7 @@ header {
          }
          nav {
              margin-top: 20px;
-             margin-bottom: -16px;
+             margin-bottom: 0px;
              background-color: green;
              top:-15px;
          }
