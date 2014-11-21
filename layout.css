@@ -7,6 +7,7 @@ header {
              height: 40px;
          }
          nav {
+                      display:inline;
              margin-top: 20px;
              margin-bottom: 0px;
              background-color: green;
