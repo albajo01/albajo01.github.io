@@ -36,4 +36,6 @@ header {
              margin: 0px;
          }
          title { 
-                      position:relative;
+                      position:absolute;
+top:100px;
+}
