@@ -7,9 +7,10 @@ header {
              height: 40px;
          }
          nav {
-             margin-top: 0px;
+             margin-top: 5px;
              margin-bottom: 0px;
              background-color: green;
+             height:25px;
           
          }
          nav li {
