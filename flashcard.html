@@ -2,12 +2,11 @@
 <head>
 <script>
 type="text/javascript">
-    changeThisPageFunc = function() {
         counter = 0;
-    var myMain;
-    <p>0</p> 
-    myCount = document.querySelector('p');
-    counter = counter + 1,
+    updatecounter = function() {
+counter = counter + 1,
+    countSpot = document.querySelector('#myCounter');
+    countSpot.innerHTML = "Correct: " + counter;
   </script
 </script>
   <style>
@@ -46,7 +45,7 @@ background-color: yellow;
 </head>
 <body>
 <nav>
-<input type="checkbox">
+<input type="checkbox" onclick="updateCounter();">
 <section class="answer">
   <p>Guy</p>
   </section>
@@ -55,7 +54,7 @@ background-color: yellow;
   </section>
   </nav>
   <nav>
-  <input type="checkbox">
+  <input type="checkbox" onclick="updateCounter();">
  <section class="answer">
   <p>blue</p>
   </section>
@@ -64,7 +63,7 @@ background-color: yellow;
   </section>
  </nav>
  <nav>
-  <input type="checkbox">
+  <input type="checkbox" onclick="updateCounter();">
  <section class="answer">
   <p>League of Legends</p>
   </section>
@@ -72,5 +71,6 @@ background-color: yellow;
   <p>What is my favorte game?</p>
   </section>
  </nav>
+ <h2 id="mycounter">Correct= 0</h2>
 </body>
 </html>
