@@ -1,14 +1,5 @@
 <html>
 <head>
-<script>
-type="text/javascript">
-        counter =  0
-    updateCounter = function() {
-counter = counter +1,
-    countSpot = document.querySelector('#myCounter');
-    countSpot.innerHTML = "Correct:" + counter;
-  </script
-</script>
   <style>
   input:checked ~ .question { 
     background-color: green;
@@ -44,6 +35,14 @@ background-color: yellow;
 </style>
 </head>
 <body>
+<script>
+type="text/javascript">
+        counter =  0
+    updateCounter = function() {
+counter = counter +1,
+    countSpot = document.querySelector('#myCounter');
+    countSpot.innerHTML = "Correct:" + counter;
+</script>
 <nav>
 <input type="checkbox" onclick="updateCounter();">
 <section class="answer">
