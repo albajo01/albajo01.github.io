@@ -38,14 +38,19 @@ background-color: yellow;
 <script>
 type="text/javascript">
         counter =  0
-    updateCounter = function() {
-counter = counter +1,
-    countSpot = document.querySelector('#myCounter');
+    updateCounter = function(cbId) {
+      theCheckbox = document.querySelector("#"+cbId);
+      if (theCheckbox.Checked) {
+        counter = counter + 1;
+      } else {
+        counter = counter - 1;
+      }
+          countSpot = document.querySelector('#myCounter');
     countSpot.innerHTML = "Correct:" + counter;
 }
   </script>
 <nav>
-<input type="checkbox" onclick="updateCounter();">
+<input id="cb1" type="checkbox" onclick="updateCounter(\"cb1\");">
 <section class="answer">
   <p>Guy</p>
   </section>
@@ -54,7 +59,7 @@ counter = counter +1,
   </section>
   </nav>
   <nav>
-  <input type="checkbox" onclick="updateCounter();">
+  <input id="cb2" type="checkbox" onclick="updateCounter(\"cb2\");">
  <section class="answer">
   <p>blue</p>
   </section>
@@ -63,7 +68,7 @@ counter = counter +1,
   </section>
  </nav>
  <nav>
-  <input type="checkbox" onclick="updateCounter();">
+  <input id="cb3" type="checkbox" onclick="updateCounter(\"cb3\");">
  <section class="answer">
   <p>League of Legends</p>
   </section>
