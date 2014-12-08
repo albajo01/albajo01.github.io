@@ -9,7 +9,7 @@
 <aside>
      <label for="grocerybox">Grocery Item:</label>
      <input type="text" id="item" size=40 value=grocerybox /> <br>
-      <option class="meat">Meat</option>
+     <option class="meat">Meat</option>
     <option class="dairy">Dairy</option>
     <option class="vegetables">Vegetable</option>
     <option class="fruit">Fruit</option>
@@ -24,8 +24,8 @@
 
      <script>
        addItem = function() {
-            myUL = document.querySelector('#grocerylist');
-           myTextBox = document.querySelecetor('#groceryBox');
+           myUL = document.querySelector('#grocerylist');
+           myTextBox = document.querySelector('#groceryBox');
            myLi = document.createElement('li');
            myGrocery = document.createTextNode(mytextBox.value);
            myLi.appendChild(myGrocery);
