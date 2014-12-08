@@ -6,10 +6,16 @@
 <body>
 <label for="item">Items:</label>
      <input type="text" id="item"/> <br>
-     <button onclick="add();">Add</button>
+     <select id="priority">
+    <option>Meat</option>
+    <option>Dairy</option>
+    <option>Vegetable</option>
+    <option>Fruit</option>
+</select>
+  <button onclick="addToList();">Add</button>
 
      <script>
-       add = function() {
+       addToList = function() {
            Items = document.querySelector('#item').value;
        }
        </script>
