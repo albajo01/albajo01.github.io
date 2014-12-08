@@ -1,25 +1,36 @@
 <html>
 <head> <link rel="stylesheet" href="shop.css" type="type/css"
 <title><h1>Grocery List</h1>
-</title>  
-</head>
-<body>
-<label for="item">Items:</label>
-     <input type="text" id="item"/> <br>
-     <label for="Type"><select id="type">
-    <option class="meat">Meat</option>
+<main> <ul id=grocerylist>
+     
+</ul>
+     
+</main>
+<aside>
+     <label for="grocerybox">Grocery Item:</label>
+     <input type="text" id="item" size=40 value=grocerybox /> <br>
+      <option class="meat">Meat</option>
     <option class="dairy">Dairy</option>
     <option class="vegetables">Vegetable</option>
     <option class="fruit">Fruit</option>
     </label>
+</aside>
+
+</title>  
+</head>
+<body>
 </select>
-  <button onclick="addToList();">Add</button>
+  <button onclick="addItem();">Add</button>
 
      <script>
-       addToList = function() {
-           Items = document.querySelector('#item').value;
-           Type = document.querySelector('#type').value;
-           document.body.
+       addItem = function() {
+            myUL = document.querySelector('#grocerylist');
+           myTextBox = document.querySelecetor('#groceryBox');
+           myLi = document.createElement('li');
+           myGrocery = document.createTextNode(mytextBox.value);
+           myLi.appendChild(myGrocery);
+           myUL.appendChild(myLi);
+           mytextBox.value = " ";
        }
        </script>
 
