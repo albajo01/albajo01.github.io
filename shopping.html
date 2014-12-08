@@ -6,6 +6,14 @@
 <body>
 <label for="item">Items:</label>
      <input type="text" id="item"/> <br>
+     <button onclick="add();">Add</button>
+
+     <script>
+       add = function() {
+           Items = document.querySelector('#item').value;
+       }
+       </script>
+
      <table><ul class="checkmark">
     <tr class="meat"><td></tr>
     <tr class="dairy"><td></tr>
