@@ -10,6 +10,7 @@
 <aside>
      <label for="groceryBox">Grocery Item:</label>
      <input type="text" id="groceryBox" size=40 value=grocerylist /> <br>
+     <input type="checkbox">
      <select>
      <option class="meat">Meat</option>
     <option class="dairy">Dairy</option>
@@ -30,6 +31,9 @@
            myLi.appendChild(myGrocery);
            myUL.appendChild(myLi);
            mytextBox.value = "addItem";
+           myCb= document.createElement('input');
+           myCb.type='checkbox';
+           myCb.onclick='checkme';
        }
        </script>
      <table><ul class="checkmark">
