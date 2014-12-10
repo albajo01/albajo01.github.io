@@ -27,9 +27,18 @@
            myGrocery = document.createTextNode(mytextBox.value);
            myLi.appendChild(myGrocery);
            myUL.appendChild(myLi);
-           mytextBox.value = "groceryBox";
+           mytextBox.value = "";
        }
        </script>
+       <aside>
+     <label for="grocerybox">Grocery Item:</label>
+     <input type="text" id="grocerybox" size=40 value=grocerybox /> <br>
+     <option class="meat">Meat</option>
+    <option class="dairy">Dairy</option>
+    <option class="vegetables">Vegetable</option>
+    <option class="fruit">Fruit</option>
+    </label>
+</aside>
 
      <table><ul class="checkmark">
     <tr class="meat"><td></tr>
