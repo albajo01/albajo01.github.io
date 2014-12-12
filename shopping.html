@@ -12,7 +12,7 @@
      <label for="groceryBox">Grocery Item:</label>
      <input type="text" id="groceryBox" size=40 value=grocerylist /> <br>
      
-     <select>
+     <select id="category">
      <option class="meat">Meat</option>
     <option class="dairy">Dairy</option>
     <option class="vegetables">Vegetable</option>
@@ -27,11 +27,13 @@
        addItem = function() {
            myUL = document.querySelector('#grocerylist');
            mytextBox = document.querySelector('#groceryBox');
+           mydropDown = document.querySelector('category');
            myLi = document.createElement('li');
            myGrocery = document.createTextNode(mytextBox.value);
            myLi.appendChild(myGrocery);
            myUL.appendChild(myLi);
            mytextBox.value = "addItem";
+           mydropDown.value = "addItem";
            myCb= document.createElement('input');
            myCb.type='checkbox';
            myCb.onclick='checkme';
